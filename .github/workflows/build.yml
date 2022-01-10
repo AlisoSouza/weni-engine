@@ -6,10 +6,11 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: ['migrate-to-poetry']
+    branches:
+      - '*'
   pull_request:
-    branches: ['migrate-to-poetry]
-
+    branches:
+      - '*'
 jobs:
   # Label of the container job
   container-job:
