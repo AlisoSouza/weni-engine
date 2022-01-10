@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: ['migrate-pipenv-poetry']
+    branches: ['migrate-to-poetry']
   pull_request:
-    branches: ['migrate-pipenv-poetry]
+    branches: ['migrate-to-poetry]
 
 jobs:
   # Label of the container job
