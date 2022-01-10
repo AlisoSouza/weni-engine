@@ -6,9 +6,27 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: ['migrate-to-poetry']
+    branches:
+      - '*'
   pull_request:
-    branches: ['migrate-to-poetry]
+    branches:
+      - '*'
+env:
+  SECRET_KEY: "SK"
+  DEFAULT_DATABASE: "postgres://connect:connect@localhost:5432/connect"
+  OIDC_RP_SERVER_URL: ""
+  OIDC_RP_REALM_NAME: ""
+  OIDC_RP_CLIENT_ID: ""
+  OIDC_RP_CLIENT_SECRET: ""
+  OIDC_OP_AUTHORIZATION_ENDPOINT: ""
+  OIDC_OP_TOKEN_ENDPOINT: ""
+  OIDC_OP_USER_ENDPOINT: ""
+  OIDC_OP_JWKS_ENDPOINT: ""
+  OIDC_RP_SIGN_ALGO: ""
+  OIDC_OP_LOGOUT_ENDPOINT: ""
+  BILLING_COST_PER_WHATSAPP: 199
+  BILLING_TEST_MODE: True
+
 
 jobs:
   # Label of the container job
