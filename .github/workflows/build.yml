@@ -67,5 +67,7 @@ jobs:
           pip install poetry
           poetry config virtualenvs.create false --local
           poetry install
+      - name: Create database
+        run: python contrib/create_database.py
       - name: Test DB
         run: python manage.py test
