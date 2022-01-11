@@ -3,7 +3,7 @@ from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
 def create_database():
     try:
-        con = psycopg2.connect(host="localhost", database="postgres", user="postgres", password="postgres")
+        con = psycopg2.connect(host="postgres", database="postgres", user="postgres", password="postgres")
         con.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
     except Exception as e:
         print(e)
