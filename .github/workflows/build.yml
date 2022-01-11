@@ -54,7 +54,5 @@ jobs:
           poetry install
       - name: Create database
         run: python contrib/create_database.py
-      - name: Run collectstatic
-        run: python manage.py collectstatic --noinput
       - name: Run Tests
         run: python contrib/ciUtils.py
