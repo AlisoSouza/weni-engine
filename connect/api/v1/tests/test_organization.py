@@ -615,6 +615,7 @@ class ExtraIntegrationsTestCase(TestCase):
         )
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
+
 class GetOrganizationStripeDataTestCase(TestCase):
     def setUp(self):
         self.factory = RequestFactory()

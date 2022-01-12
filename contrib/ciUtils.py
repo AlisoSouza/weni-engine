@@ -34,7 +34,6 @@ class CiUtils(object):
                 OIDC_OP_JWKS_ENDPOINT=""
                 BILLING_COST_PER_WHATSAPP=0.1
                 BILLING_TEST_MODE=True
-                BILLING_SETTINGS="{{}}"
             """.replace(" ", "").strip()
 
     def execute(self, command, is_printing=False):
