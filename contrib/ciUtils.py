@@ -9,7 +9,7 @@ from django.core.management.utils import get_random_secret_key
 class CiUtils(object):
 
     def __init__(self):
-        self.answers = ['SUCESS', 'FAILURE']
+        self.answers = ['SUCCESS', 'FAILURE']
 
     def init_ci(self, path):
         self.logger = LogController()
