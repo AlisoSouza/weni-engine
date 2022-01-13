@@ -13,6 +13,7 @@ on:
       - '*'
 env:
   DEFAULT_DATABASE: "postgres://connect:connect@postgres:5432/connect"
+  BILLING_SETTINGS: "${{secrets.BILLING_SETTINGS}}"
 jobs:
   # Label of the container job
   container-job:
