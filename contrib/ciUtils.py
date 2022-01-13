@@ -2,7 +2,6 @@ from contrib.fileManager import FileManager
 from contrib.logger import LogController
 import os
 import subprocess
-
 from django.core.management.utils import get_random_secret_key
 
 
@@ -10,7 +9,6 @@ class CiUtils(object):
 
     def __init__(self):
         self.answers = ['SUCCESS', 'FAILURE']
-
     def init_ci(self, path):
         self.logger = LogController()
         self.fileManager = FileManager(path)
@@ -32,7 +30,7 @@ class CiUtils(object):
                 OIDC_RP_SERVER_URL=""
                 OIDC_OP_USER_ENDPOINT=""
                 OIDC_OP_JWKS_ENDPOINT=""
-                BILLING_COST_PER_WHATSAPP=0.1
+                BILLING_COST_PER_WHATSAPP=199
                 BILLING_TEST_MODE=True
             """.replace(" ", "").strip()
 
